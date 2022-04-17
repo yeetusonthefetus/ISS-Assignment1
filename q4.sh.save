@@ -1,0 +1,18 @@
+	#!/bin/bash
+echo "Enter the number of input: "
+read size
+echo "Enter the numbers: "
+declare -a array
+i=0
+while [ "$i" -lt "$size" ]
+do
+  read ${array[i]}
+  let i+=1
+done
+let i=0
+while [ "$i" -lt "$size" ]
+do
+  echo "${array[i]}"
+  let i+=1
+done
+echo "Ok done"
