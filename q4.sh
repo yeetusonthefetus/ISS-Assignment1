@@ -1,12 +1,11 @@
 #!/bin/bash
 echo "Enter the numbers: "
-i=0
 declare -a nums
-while read line
-do
-nums=("${nums[@]}" $line)
-let i+=1
-done
+read string
+l=${#string}
+let l+=1
+i=l/2
+IFS=',' read -r -a nums <<< "$string"
 for ((j=0; j<i; j++))
 do
   for((k=0; k<i-j-1; k++))
@@ -19,4 +18,8 @@ do
     fi
   done
 done
-echo ${nums[@]}
+for ((j=0; j<i-1 ; j++))
+do
+  echo -n ${nums[j]}","
+done
+echo ${nums[$((i-1))]}

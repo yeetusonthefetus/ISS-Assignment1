@@ -11,8 +11,8 @@ with quotes.txt being the input file
 All outputs will be shown on the terminal itself.
 
 ##Q4
-Inputs should be given space separated or line separated and after all inputs are given, use CTRL+D to end the taking of inputs.
-Output will be given on the terminal itself in a space separated array of numbers.
+Inputs should be given as a string of comma separated numbers.
+Output will be given on the terminal itself in a comma separated array of numbers.
 
 ##Q5
 Every subpart is in one .sh file.
