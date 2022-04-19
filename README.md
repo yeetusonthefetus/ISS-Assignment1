@@ -2,10 +2,11 @@
 The original quotes.txt is present in the given directory.
 
 ##Q3
-Each subpart has its own .sh file.
+All subparts are in one .sh file.
+The outputs of each subpart is given with a blank line between each part.
 The input file will be given as an argument in the command line.For example:
 
-./q3a.sh quotes.txt
+./q3.sh quotes.txt
 with quotes.txt being the input file
 
 All outputs will be shown on the terminal itself.
@@ -25,7 +26,7 @@ The shell scripts for questions 1,2,4,5 can be executed like this:
 ./qx.sh
 
 The shell scripts for question 3 can be executed like this:
-./q3x.sh input_file.txt
+./q3.sh input_file.txt
 
 
 https://github.com/yeetusonthefetus/ISS-Assignment1
